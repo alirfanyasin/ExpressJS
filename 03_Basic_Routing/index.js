@@ -2,10 +2,11 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// ============================ Basic Routing ============================
 // Get method
-// app.get('/', (req, res) => {
-//   res.send('Hello World')
-// })
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 
 
 // Post method
@@ -29,7 +30,10 @@ const port = 3000;
 
 
 // ============================ Route Parameter ============================
-
+// Put method
+app.put('/users/:id', (req, res) => {
+  res.send(req.params)
+})
 
 
 
