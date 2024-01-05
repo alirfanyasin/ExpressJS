@@ -36,6 +36,19 @@ app.put('/users/:id', (req, res) => {
 })
 
 
+// ========================== App Route ======================
+app.route('/book')
+  .get((req, res) => {
+    res.send('Get Book')
+  })
+  .post((req, res) => {
+    res.send('Post Book')
+  })
+  .put((req, res) => {
+    res.send('Put Book')
+  })
+
+
 
 
 app.listen(port, () => {
