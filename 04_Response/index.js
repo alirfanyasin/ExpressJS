@@ -21,7 +21,7 @@ app.get('/user', (req, res) => {
     name: 'Irfan',
     old: 19
   }
-  res.send(user)
+  res.json(user)
 })
 
 // resnponse resdirect()
